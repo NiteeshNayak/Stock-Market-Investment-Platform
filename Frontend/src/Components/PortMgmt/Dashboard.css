@@ -1,0 +1,261 @@
+.dashboard {
+  font-family: Arial, sans-serif;
+  /* padding: 20px; */
+  background: linear-gradient(90deg, #020c5a, #0008fa);
+  height: 729px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-info h2 {
+  margin-left: 600px;
+  font-size: 1.5rem;
+  color: white;
+
+}
+
+.user-info p {
+  margin-left: 570px;
+  color: silver;
+}
+
+.profile a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2b6cb0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.profile a:hover {
+  background-color: #1a4e8a;
+}
+
+/* Main Content Layout */
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Trending Coins Section */
+.trending-coins {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trending-coins h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #2b6cb0;
+}
+
+.trending-coins ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.trending-coins li {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+}
+
+.trending-coins li span {
+  color: #888;
+  font-size: 0.85rem;
+  font-weight: bolder;
+}
+
+/* Top Cryptocurrencies Section */
+
+.top-cryptocurrencies {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-cryptocurrencies h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #2b6cb0;
+}
+
+.top-cryptocurrencies table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.top-cryptocurrencies th,
+.top-cryptocurrencies td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-cryptocurrencies th {
+  background-color: #f8f9fa;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.top-cryptocurrencies tr:hover {
+  background-color: #f1f1f1;
+}
+
+.top-cryptocurrencies td {
+  font-size: 0.9rem;
+}
+
+
+/* Latest News Section */
+
+.latest-news {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.latest-news h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #2b6cb0;
+}
+
+.latest-news p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.latest-news p a {
+  color: #2b6cb0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.latest-news p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    grid-template-columns: 1fr;
+  }
+
+  .profile a {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .user-info h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Styling for Positive and Negative Values */
+
+.value-positive {
+  color: #28a745;
+  /* Green for positive values */
+
+  font-weight: bold;
+}
+
+.value-negative {
+  color: #dc3545;
+  /* Red for negative values */
+
+  font-weight: bold;
+}
+
+/* Optional Hover Effect */
+
+.value-positive:hover,
+.value-negative:hover {
+  text-decoration: underline;
+}
+
+.trending-coins h3 svg,
+.latest-news h3 svg {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+tr td svg {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+
+
+/*
+.top-cryptocurrencies {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-cryptocurrencies h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #2b6cb0;
+}
+
+/* Scrollable container for table */
+/*
+.top-cryptocurrencies .table-container {
+  max-height: 400px;
+  /* Set a height for the table container */
+/*
+  overflow-y: auto;
+  /* Enable vertical scroll */
+/*
+  margin-top: 10px;
+}
+
+.top-cryptocurrencies table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.top-cryptocurrencies th,
+.top-cryptocurrencies td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-cryptocurrencies th {
+  background-color: #f8f9fa;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.top-cryptocurrencies tr:hover {
+  background-color: #f1f1f1;
+}
+
+.top-cryptocurrencies td {
+  font-size: 0.9rem;
+}  */

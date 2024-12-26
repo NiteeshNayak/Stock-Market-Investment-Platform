@@ -1,0 +1,333 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #f4f4f9; */
+  background: linear-gradient(90deg, #020c5a, #0008fa);
+}
+
+/* Budget Container */
+.budget-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* padding: 20px; */
+}
+
+
+/* Content */
+.content {
+  flex: 1;
+  margin-top: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+.header .btn-primary {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.header .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Loading, Success, and Error messages */
+.loading,
+.success,
+.error {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.loading {
+  background-color: #ffdf6c;
+}
+
+.success {
+  background-color: #28a745;
+  color: white;
+}
+
+.error {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Budget Summary Section */
+.budget-summary-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.budget-summary {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.budget-summary h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.budget-amount {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin: 10px 0;
+}
+
+/* Container for the progress bar */
+.progress-bar {
+  width: 100%;
+  /* Make the progress bar span the full width of its container */
+  background-color: #e0e0e0;
+  /* Light gray background for the progress bar */
+  border-radius: 10px;
+  /* Rounded corners for the container */
+  overflow: hidden;
+  /* Ensure the fill doesn't overflow the container */
+  height: 20px;
+  /* Height of the progress bar */
+  margin-top: 5px;
+  /* Add some space between the progress bar and other elements */
+}
+
+/* Fill inside the progress bar that represents progress */
+.progress-fill {
+  height: 100%;
+  /* Fill should match the container's height */
+  background-color: #4caf50;
+  /* Green color for progress */
+  width: 0;
+  /* Default width of the fill (will be dynamically set via JavaScript) */
+  transition: width 0.5s ease-in-out;
+  /* Smooth transition when progress changes */
+}
+
+/* Optional: If you want to show a red color when progress exceeds the budget limit */
+.progress-fill.over-budget {
+  background-color: #f44336;
+  /* Red color indicating over budget */
+}
+
+.summary-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-actions button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.summary-actions button:hover {
+  background-color: #5a6268;
+}
+
+/* Expense History Table */
+.expense-history {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.expense-history table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.expense-history th,
+.expense-history td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.expense-history th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.expense-history td {
+  background-color: white;
+}
+
+.expense-history tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Dialog Styles */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-box h3 {
+  margin-top: 0;
+}
+
+.dialog-content {
+  margin-bottom: 20px;
+}
+
+.dialog-content label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.dialog-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialog-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dialog-actions .btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.dialog-actions .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.dialog-actions .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.dialog-actions .btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Button Hover Effects */
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #dc3545;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #c82333;
+}
+
+.delete-btn i {
+  font-size: 20px;
+}
+
+/* Dialog Styles for Delete Confirmation */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-box h3 {
+  margin-top: 0;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialog-actions .btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.dialog-actions .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.dialog-actions .btn-danger:hover {
+  background-color: #c82333;
+}
+
+.dialog-actions .btn-secondary:hover {
+  background-color: #5a6268;
+}

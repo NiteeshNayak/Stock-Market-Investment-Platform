@@ -1,0 +1,177 @@
+/* Market.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color, #f9f9f9);
+  color: var(--text-color, #f7f2f2);
+  line-height: 1.6;
+}
+
+.container {
+  padding: 20px;
+  margin: 0px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, #020c5a, #0008fa);
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 1px;
+  padding: 15px 0px 15px 0px;
+  border-radius: 20px;
+
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+  color: white;
+}
+
+.search-input {
+  width: 30%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #007bff;
+}
+
+table {
+  width: 99%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+
+}
+
+thead {
+  background-color: #f5f5f5;
+
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+  color: #333;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+td {
+  color: #555;
+}
+
+td.green {
+  color: green;
+}
+
+td.red {
+  color: red;
+}
+
+.crypto-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  font-size: 16px;
+  /* Adjust for FontAwesome */
+  color: #888;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  /* Add padding for the icon */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-button {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  color: #020c5a;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-button:hover {
+  /* background-color: white; */
+  background: linear-gradient(90deg, #020c5a, #0008fa);
+  color: white;
+  box-shadow: 0 0 10px #020c5a;
+  border: 2px solid white;
+}
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  margin: 0 10px;
+  font-size: 16px;
+}

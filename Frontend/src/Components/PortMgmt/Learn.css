@@ -1,0 +1,122 @@
+.learn-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: #020c5a;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #020c5a;
+  height: 150px;
+  width: 1460px;
+}
+
+.learn-text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #020c5a;
+}
+
+.learn-text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.learn-image img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #020c5a;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin: 20px 10px;
+  color: white;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.filter-option input {
+  margin-right: 8px;
+}
+
+/* Recent Articles Section */
+.recent-articles {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #020c5a;
+  margin-left: 10px;
+  width: 1467px;
+}
+
+.recent-articles h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.recent-articles ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-articles li {
+  margin: 5px 0;
+}
+
+.recent-articles a {
+  text-decoration: none;
+  color: #007BFF;
+  transition: color 0.3s;
+}
+
+.recent-articles a:hover {
+  color: #0056b3;
+}
+
+.video-section {
+  margin-top: 30px;
+  margin-left: 10px;
+  color: white;
+}
+
+.video-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.video-card {
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.video-card p {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.video-card p:hover {
+  color: #007BFF;
+}

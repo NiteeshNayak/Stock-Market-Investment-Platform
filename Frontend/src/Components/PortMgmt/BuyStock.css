@@ -1,0 +1,168 @@
+.buy-crypto-container {
+  padding: 20px;
+  background: #f7f9fc;
+  font-family: Arial, sans-serif;
+}
+
+.buy-crypto-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.crypto-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.crypto-table th,
+.crypto-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.crypto-table th {
+  background: #f0f0f0;
+  font-weight: bold;
+}
+
+.crypto-table .positive {
+  color: green;
+}
+
+.crypto-table .negative {
+  color: red;
+}
+
+.select-coin {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.select-coin:hover {
+  background-color: #45a049;
+}
+
+.cancel-coin {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-coin:hover {
+  background-color: #d32f2f;
+}
+
+.crypto-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+.modal .modal-content input {
+  width: 380px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.modal button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+
+.close-btn {
+  background-color: #f44336;
+}
+
+.buy-btn {
+  background-color: #4CAF50;
+}
+
+.buy-btn:hover,
+.close-btn:hover {
+  opacity: 0.8;
+}
+
+/* Other Styles */
+.container {
+  padding: 20px;
+}
+
+.container h1 {
+  color: #f4f4f4;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,97 @@
+/* UnauthorizedPage.css */
+
+/* Container Styling */
+.unauthorized-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f4f6f9;
+  /* Light background color */
+}
+
+/* Box Styling */
+.unauthorized-box {
+  border: 2px solid #ff5722;
+  border-radius: 8px;
+  padding: 30px;
+  background-color: #fff3e0;
+  /* Light orange background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for the box */
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Lock Icon Styling */
+.unauthorized-icon {
+  font-size: 50px;
+  color: #ff5722;
+  /* Orange color for the lock icon */
+  margin-bottom: 20px;
+}
+
+/* Heading */
+.unauthorized-heading {
+  font-size: 24px;
+  color: #ff5722;
+  /* Match the icon color */
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* Subheading */
+.unauthorized-subheading {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Redirect Text */
+.unauthorized-redirect {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+
+/* Button Styling */
+.unauthorized-btn {
+  background-color: #ff5722;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-top: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.unauthorized-btn:hover {
+  background-color: #ff3d00;
+  /* Darker shade of orange on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .unauthorized-box {
+    padding: 20px;
+  }
+
+  .unauthorized-heading {
+    font-size: 20px;
+  }
+
+  .unauthorized-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
